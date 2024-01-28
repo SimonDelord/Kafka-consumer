@@ -1,5 +1,5 @@
 # Inherit python image
-FROM python:3.8
+FROM python:3.6-slim
 
 # Set up directories
 RUN mkdir /application
