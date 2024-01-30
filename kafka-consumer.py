@@ -29,10 +29,11 @@ def main():
     try:
       kafka_message = f"""
       Message received: {message.value}
-#      Message key: {message.key}
-#      Message partition: {message.partition}
-#      Message offset: {message.offset}
+ #     Message key: {message.key}
+ #     Message partition: {message.partition}
+ #     Message offset: {message.offset}
       Values for AAP: {message.value['name']}
+      Second value for AAP: {message.value['price'].[0].['net']}
 
       """
       logger.info(kafka_message)
