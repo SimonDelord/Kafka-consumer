@@ -33,7 +33,7 @@ def main():
  #     Message partition: {message.partition}
  #     Message offset: {message.offset}
       Values for AAP: {message.value['name']}
-      Second value for AAP: {message.value['price']}
+      Second value for AAP: {message.value['price'][1]['net']}
 
       """
       logger.info(kafka_message)
